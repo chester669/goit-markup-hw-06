@@ -228,9 +228,7 @@ ol {
 .order-btn {
     font-size: 16px;
     letter-spacing: 0.04em;
-    color: rgba(255, 255, 255, 1);
     background-color: #4D5AE5;
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     color: #FFFFFF;
     cursor: pointer;
@@ -540,6 +538,74 @@ ol {
     color: #f4f4fd
 }
 
+.footer-email {
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    Width: 264px;
+    Height: 40px;
+    background: #2E2F42;
+}
+
+.footer-email::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding-left: 18px;
+    padding-top: 8px;
+
+}
+
+.subscribe {
+    margin-left: 80px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+}
+
+.footer-input-button {
+    margin-left: 80px;
+    display: flex;
+    column-gap: 24px;
+}
+
+.footer-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 24px;
+    min-width: 165px;
+    gap: 16px;
+    background: #4D5AE5;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+}
+
+
+.button-icon {
+    position: relative;
+}
+
+.footer-button-svg {
+    position: absolute;
+    right: 24px;
+
+    top: 10px;
+}
+
 /* portfolio */
 .portfolio {
     padding: 96px 0 120px
@@ -719,4 +785,151 @@ ol {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+/* backdrop user info */
+
+.modal-user {
+    padding: 0px 24px 0px 24px;
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-top: 72px;
+    margin-bottom: 16px;
+}
+
+.modal-info-desc {
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+    margin-bottom: 4px;
+}
+
+.modal-user-info {
+    display: block;
+    margin-bottom: 8px;
+
+}
+
+.input-user-info {
+    position: relative;
+    width: 360px;
+    height: 40px;
+    padding-left: 38px;
+}
+
+.modal-user-comment {
+    width: 360px;
+    height: 120px;
+    resize: none;
+}
+
+.modal-user-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.input-user-info,
+.modal-user-comment {
+    width: 100%;
+    border: 1px solid #2E2F4266;
+    border-radius: 4px;
+    transition: outline var(--transition-duration-func), border-color var(--transition-duration-func);
+    padding-top: 8px;
+    padding-left: 16px;
+
+}
+
+.input-user-info:focus,
+.input-user-info:hover,
+.modal-user-comment:hover,
+.modal-user-comment:focus {
+    outline: none;
+    border-color: #4D5AE5;
+}
+
+.input-user-info:focus,
+.input-user-info:hover+.input-icon {
+    fill: #4D5AE5;
+}
+
+.modal-user-info {
+    position: relative;
+}
+
+.privacy-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.modal-user-checkbox {
+    display: flex;
+    text-align: center;
+}
+
+.modal-user-privacy {
+    appearance: none;
+    position: absolute;
+}
+
+.privacy-checkmark {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    padding: 2px;
+    margin-right: 8px;
+}
+
+.checkmark-icon {
+    opacity: 0;
+    transition: opacity var(--transition-duration-func);
+}
+
+.modal-user-privacy:checked+.privacy-checkmark>.checkmark-icon {
+    opacity: 1;
+}
+
+.input-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+
+}
+
+.user-info-svg {
+    position: relative;
+    display: block;
+}
+
+.modal-user-button {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    font-weight: 500;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    transition: background-color var(--transition-duration-func);
 }
