@@ -735,6 +735,7 @@ ol {
 
 .backdrop {
     position: fixed;
+    padding: 72px 24px 24px 24px;
 
     top: 0;
     left: 0;
@@ -797,6 +798,9 @@ ol {
 }
 
 /* backdrop user info */
+.modal-user-general {
+    margin-bottom: 8px;
+}
 
 .modal-user {
     padding: 0px 24px 0px 24px;
@@ -812,25 +816,28 @@ ol {
     margin-bottom: 16px;
 }
 
-.modal-info-desc {
+/* .modal-info-desc {
     display: block;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: #8E8F99;
     margin-bottom: 4px;
-}
+} */
 
 .modal-user-info {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     margin-right: 24px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
 
 }
 
 .input-user-info {
     position: relative;
-    width: 360px;
     height: 40px;
     padding-left: 38px;
 }
@@ -921,7 +928,6 @@ ol {
 
 .user-info-svg {
     position: relative;
-    display: block;
 }
 
 .modal-user-button {

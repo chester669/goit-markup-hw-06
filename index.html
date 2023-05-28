@@ -554,14 +554,21 @@
           </svg>
         </button>
         <div class="backdrop-client-info">
+          <p class="modal-title">
+            Leave your contacts and we will call you back
+          </p>
           <form class="modal-user">
-            <p class="modal-title">
-              Leave your contacts and we will call you back
-            </p>
-            <label class="modal-user-info">
-              <span class="modal-info-desc">name</span>
-              <span class="user-info-svg">
-                <input class="input-user-info" type="text" name="user_name" />
+            <div class="modal-user-general">
+              <label class="modal-user-info" for="user-name">name</label>
+              <!-- <span class="modal-info-desc">name</span>
+              <span class="user-info-svg"> -->
+              <div class="user-info-svg">
+                <input
+                  class="input-user-info"
+                  type="text"
+                  name="user_name"
+                  id="user-name"
+                />
                 <svg class="input-icon">
                   <use
                     class="input-icon-user"
@@ -570,12 +577,19 @@
                     height="24"
                   ></use>
                 </svg>
-              </span>
-            </label>
-            <label class="modal-user-info">
-              <span class="modal-info-desc">phone</span>
-              <span class="user-info-svg">
-                <input class="input-user-info" type="tel" name="user_phone" />
+              </div>
+              <!-- </span> -->
+
+              <label class="modal-user-info" for="label_phone">phone</label>
+              <!-- <span class="modal-info-desc">phone</span>
+                <span class="user-info-svg"> -->
+              <div class="user-info-svg">
+                <input
+                  class="input-user-info"
+                  type="tel"
+                  name="user_phone"
+                  id="label_phone"
+                />
                 <svg class="input-icon">
                   <use
                     class="input-icon-phone"
@@ -584,12 +598,19 @@
                     height="24"
                   ></use>
                 </svg>
-              </span>
-            </label>
-            <label class="modal-user-info">
-              <span class="modal-info-desc">email</span>
-              <span class="user-info-svg">
-                <input class="input-user-info" type="email" name="user_email" />
+              </div>
+              <!-- </span> -->
+
+              <label class="modal-user-info" for="label-email">email</label>
+              <!-- <span class="modal-info-desc">email</span>
+                <span class="user-info-svg"> -->
+              <div class="user-info-svg">
+                <input
+                  class="input-user-info"
+                  type="email"
+                  name="user_email"
+                  id="label-email"
+                />
                 <svg class="input-icon">
                   <use
                     class="input-icon-email"
@@ -598,34 +619,36 @@
                     height="24"
                   ></use>
                 </svg>
-              </span>
-            </label>
-            <label class="modal-user-info">
-              <span class="modal-info-desc">comment</span>
-              <textarea
-                class="modal-user-comment"
-                name="user_comment"
-                placeholder="Text input"
-              ></textarea>
-            </label>
-            <label class="modal-user-checkbox">
-              <input
-                class="modal-user-privacy"
-                type="checkbox"
-                name="user-comment"
-              />
-              <svg class="privacy-checkmark" width="16" height="16">
-                <use
-                  class="checkmark-icon"
-                  href="./images/icons.svg#icon-checkmark"
-                ></use>
-              </svg>
-              <span class="privacy-text"
-                >I accept the terms and conditions of the
-                <a href="">Privacy Policy</a></span
-              >
-            </label>
-            <button class="modal-user-button" type="submit">Send</button>
+              </div>
+              <!-- </span> -->
+
+              <label class="modal-user-info">
+                <span class="modal-info-desc">comment</span>
+                <textarea
+                  class="modal-user-comment"
+                  name="user_comment"
+                  placeholder="Text input"
+                ></textarea>
+              </label>
+              <label class="modal-user-checkbox">
+                <input
+                  class="modal-user-privacy"
+                  type="checkbox"
+                  name="user-comment"
+                />
+                <svg class="privacy-checkmark" width="16" height="16">
+                  <use
+                    class="checkmark-icon"
+                    href="./images/icons.svg#icon-checkmark"
+                  ></use>
+                </svg>
+                <span class="privacy-text"
+                  >I accept the terms and conditions of the
+                  <a href="">Privacy Policy</a></span
+                >
+              </label>
+              <button class="modal-user-button" type="submit">Send</button>
+            </div>
           </form>
         </div>
       </div>
