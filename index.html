@@ -616,33 +616,42 @@
           </div>
           <!-- </span> -->
           <div class="modal-comment">
-            <label class="modal-user-info" for="comment">Comment</label>
-              <!-- <span class="modal-info-desc">Comment</span> -->
-              <textarea
-                class="modal-user-comment"
-                name="user_comment"
-                id="comment"
-                placeholder="Text input"
-              ></textarea>
+            <label class="modal-user-info" for="user-comment">Comment</label>
+            <!-- <span class="modal-info-desc">Comment</span> -->
+            <textarea
+              class="modal-user-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
             <!-- </label> -->
           </div>
-          <label class="modal-user-checkbox">
+          <div class="checkbox">
             <input
               class="modal-user-privacy"
+              value="true"
               type="checkbox"
-              name="user-comment"
+              name="user-privacy"
+              id="user-privacy"
             />
-            <svg class="privacy-checkmark" width="16" height="16">
+            <label class="modal-user-checkbox" for="user-privacy"
+              ><span class="privacy-text" 
+              ><svg class="privacy-checkmark" width="10" height="8">
+                <use
+                  class="checkmark-icon"
+                  href="./images/icons.svg#icon-checkmark"
+                ></use></svg></span
+            >I accept the terms and conditions of the
+              <a class="link-color" href="">Privacy Policy</a></label
+            >
+            <!-- <span class="privacy-text"></span> -->
+            <!-- <svg class="privacy-checkmark" width="16" height="16">
               <use
                 class="checkmark-icon"
                 href="./images/icons.svg#icon-checkmark"
               ></use>
-            </svg>
-            <span class="privacy-text"
-              >I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></span
-            >
-          </label>
+            </svg> -->
+          </div>
           <button class="modal-user-button" type="submit">Send</button>
         </form>
       </div>

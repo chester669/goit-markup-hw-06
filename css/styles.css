@@ -814,6 +814,7 @@ ol {
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 16px;
 }
 
 /* .modal-info-desc {
@@ -849,13 +850,21 @@ ol {
     width: 360px;
     height: 120px;
     resize: none;
-    padding-left: 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.2);
+    background-color: transparent;
+    outline: transparent;
+    padding: 8px 16px;
 }
-.modal-comment
-{
+
+.modal-comment {
     margin-bottom: 16px;
 
 }
+
 .modal-user-comment::placeholder {
     font-size: 12px;
     line-height: 1.17;
@@ -868,8 +877,6 @@ ol {
     border: 1px solid #2E2F4266;
     border-radius: 4px;
     transition: border-color var(--transition-duration-func);
-    padding-top: 8px;
-
 }
 
 .input-user-info:focus,
@@ -881,7 +888,7 @@ ol {
 }
 
 .input-user-info:focus,
-.input-user-info:hover+ .input-icon {
+.input-user-info:hover+.input-icon {
     fill: #4D5AE5;
 }
 
@@ -889,16 +896,32 @@ ol {
     position: relative;
 }
 
+.checkbox {
+    margin-bottom: 24px;
+}
+
 .privacy-text {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.modal-user-checkbox {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
-}
-
-.modal-user-checkbox {
-    display: flex;
+    /* display: flex;
     text-align: center;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99; */
 }
 
 .modal-user-privacy {
@@ -920,6 +943,11 @@ ol {
 
 .modal-user-privacy:checked+.privacy-checkmark>.checkmark-icon {
     opacity: 1;
+}
+
+.link-color {
+    color: #4d5ae5;
+
 }
 
 .input-icon {
