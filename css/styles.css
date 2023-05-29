@@ -887,8 +887,8 @@ ol {
     border-color: #4D5AE5;
 }
 
-.input-user-info:focus + .input-icon,
-.input-user-info:hover + .input-icon  {
+.input-user-info:focus+.input-icon,
+.input-user-info:hover+.input-icon {
     fill: #4D5AE5;
 }
 
@@ -918,15 +918,13 @@ ol {
     fill: transparent;
 }
 
-.visually-hidden:checked+ .modal-user-checkbox > .privacy-text{
+.visually-hidden:checked+.modal-user-checkbox>.privacy-text {
     background-color: #404bbf;
     border: none;
     fill: #FFFFFF;
     border-color: #404bbf;
 }
-.privacy-text-margin {
-    margin-left: 8px;
-}
+
 .link-color {
     color: #4d5ae5;
 
@@ -965,7 +963,7 @@ ol {
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
-   
+
     cursor: pointer;
     transition: background-color var(--transition-duration-func);
 }
