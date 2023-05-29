@@ -577,6 +577,7 @@ ol {
 
 .footer-client-form {
     display: flex;
+    margin-left: 80px;
 }
 
 /* .footer-input-button {
@@ -735,7 +736,6 @@ ol {
 
 .backdrop {
     position: fixed;
-    padding: 72px 24px 24px 24px;
 
     top: 0;
     left: 0;
@@ -746,6 +746,7 @@ ol {
 }
 
 .modal {
+    padding: 72px 24px 24px 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -802,9 +803,9 @@ ol {
     margin-bottom: 8px;
 }
 
-.modal-user {
+/* .modal-user {
     padding: 0px 24px 0px 24px;
-}
+} */
 
 .modal-title {
     font-weight: 500;
@@ -812,8 +813,6 @@ ol {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    margin-top: 72px;
-    margin-bottom: 16px;
     color: #2E2F42;
 }
 
@@ -839,6 +838,7 @@ ol {
 
 .input-user-info {
     position: relative;
+    width: 100%;
     height: 40px;
     padding-left: 38px;
     background-color: transparent;
@@ -851,7 +851,11 @@ ol {
     resize: none;
     padding-left: 16px;
 }
+.modal-comment
+{
+    margin-bottom: 16px;
 
+}
 .modal-user-comment::placeholder {
     font-size: 12px;
     line-height: 1.17;
@@ -861,10 +865,9 @@ ol {
 
 .input-user-info,
 .modal-user-comment {
-    width: 100%;
     border: 1px solid #2E2F4266;
     border-radius: 4px;
-    transition: outline var(--transition-duration-func), border-color var(--transition-duration-func);
+    transition: border-color var(--transition-duration-func);
     padding-top: 8px;
 
 }
@@ -878,7 +881,7 @@ ol {
 }
 
 .input-user-info:focus,
-.input-user-info:hover+.input-icon {
+.input-user-info:hover+ .input-icon {
     fill: #4D5AE5;
 }
 
