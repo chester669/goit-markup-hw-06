@@ -900,6 +900,13 @@ ol {
     margin-bottom: 24px;
 }
 
+.modal-user-checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
 .privacy-text {
     width: 16px;
     height: 16px;
@@ -911,38 +918,11 @@ ol {
     fill: transparent;
 }
 
-.modal-user-checkbox {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8E8F99;
-    /* display: flex;
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8E8F99; */
-}
-
-.modal-user-privacy {
-    appearance: none;
-    position: absolute;
-}
-
-.privacy-checkmark {
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    padding: 2px;
-    margin-right: 8px;
-}
-
-.checkmark-icon {
-    opacity: 0;
-    transition: opacity var(--transition-duration-func);
-}
-
-.modal-user-privacy:checked+.privacy-checkmark>.checkmark-icon {
-    opacity: 1;
+.visually-hidden:checked+ .modal-user-checkbox > .privacy-text{
+    background-color: #404bbf;
+    border: none;
+    fill: #FFFFFF;
+    border-color: #404bbf;
 }
 
 .link-color {
@@ -967,21 +947,23 @@ ol {
 }
 
 .modal-user-button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
     font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
     font-weight: 500;
     color: #FFFFFF;
-    cursor: pointer;
-    display: block;
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 24px;
-    margin-bottom: 24px;
+   
+    cursor: pointer;
     transition: background-color var(--transition-duration-func);
 }

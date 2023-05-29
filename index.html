@@ -517,7 +517,6 @@
         <div class="footer-client-info">
           <p class="subscribe">Subscribe</p>
           <form class="footer-client-form">
-            <!-- <span class="footer-input-button"> -->
             <label class="modal-user-info">
               <input
                 class="footer-email"
@@ -526,7 +525,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <!-- <span class="button-icon"> -->
+
             <button class="footer-button" type="submit">
               Subscribe
               <svg class="footer-button-svg" width="24" height="24">
@@ -536,9 +535,6 @@
                 ></use>
               </svg>
             </button>
-
-            <!-- </span> -->
-            <!-- </span> -->
           </form>
         </div>
       </div>
@@ -557,8 +553,7 @@
         <form class="modal-user">
           <div class="modal-user-general">
             <label class="modal-user-info" for="user-name">Name</label>
-            <!-- <span class="modal-info-desc">name</span>
-              <span class="user-info-svg"> -->
+
             <div class="user-info-svg">
               <input
                 class="input-user-info"
@@ -574,11 +569,10 @@
               </svg>
             </div>
           </div>
-          <!-- </span> -->
+
           <div class="modal-user-general">
             <label class="modal-user-info" for="label_phone">Phone</label>
-            <!-- <span class="modal-info-desc">phone</span>
-                <span class="user-info-svg"> -->
+
             <div class="user-info-svg">
               <input
                 class="input-user-info"
@@ -594,11 +588,10 @@
               </svg>
             </div>
           </div>
-          <!-- </span> -->
+
           <div class="modal-user-general">
             <label class="modal-user-info" for="label-email">Email</label>
-            <!-- <span class="modal-info-desc">email</span>
-                <span class="user-info-svg"> -->
+
             <div class="user-info-svg">
               <input
                 class="input-user-info"
@@ -614,43 +607,38 @@
               </svg>
             </div>
           </div>
-          <!-- </span> -->
+
           <div class="modal-comment">
             <label class="modal-user-info" for="user-comment">Comment</label>
-            <!-- <span class="modal-info-desc">Comment</span> -->
+
             <textarea
               class="modal-user-comment"
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
-            <!-- </label> -->
           </div>
           <div class="checkbox">
             <input
-              class="modal-user-privacy"
+              class="visually-hidden"
               value="true"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
+              hidden
             />
-            <label class="modal-user-checkbox" for="user-privacy"
-              ><span class="privacy-text" 
-              ><svg class="privacy-checkmark" width="10" height="8">
-                <use
-                  class="checkmark-icon"
-                  href="./images/icons.svg#icon-checkmark"
-                ></use></svg></span
-            >I accept the terms and conditions of the
-              <a class="link-color" href="">Privacy Policy</a></label
-            >
-            <!-- <span class="privacy-text"></span> -->
-            <!-- <svg class="privacy-checkmark" width="16" height="16">
-              <use
-                class="checkmark-icon"
-                href="./images/icons.svg#icon-checkmark"
-              ></use>
-            </svg> -->
+            <label class="modal-user-checkbox" for="user-privacy">
+              <span class="privacy-text">
+                <svg class="privacy-checkmark" width="10" height="8">
+                  <use
+                    class="checkmark-icon"
+                    href="./images/icons.svg#icon-checkmark"
+                  ></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="link-color" href="">Privacy Policy</a>
+            </label>
           </div>
           <button class="modal-user-button" type="submit">Send</button>
         </form>
