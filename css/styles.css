@@ -844,6 +844,7 @@ ol {
     padding-left: 38px;
     background-color: transparent;
     outline: transparent;
+    border: 1px solid #2E2F4266;
 }
 
 .modal-user-comment {
@@ -854,10 +855,10 @@ ol {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-    border: 1px solid rgba(46, 47, 66, 0.2);
     background-color: transparent;
     outline: transparent;
     padding: 8px 16px;
+    border: 1px solid rgba(46, 47, 66, 0.2);
 }
 
 .modal-comment {
@@ -874,7 +875,6 @@ ol {
 
 .input-user-info,
 .modal-user-comment {
-    border: 1px solid #2E2F4266;
     border-radius: 4px;
     transition: border-color var(--transition-duration-func);
 }
@@ -887,8 +887,8 @@ ol {
     border-color: #4D5AE5;
 }
 
-.input-user-info:focus,
-.input-user-info:hover+.input-icon {
+.input-user-info:focus + .input-icon,
+.input-user-info:hover + .input-icon  {
     fill: #4D5AE5;
 }
 
@@ -924,7 +924,9 @@ ol {
     fill: #FFFFFF;
     border-color: #404bbf;
 }
-
+.privacy-text-margin {
+    margin-left: 8px;
+}
 .link-color {
     color: #4d5ae5;
 
