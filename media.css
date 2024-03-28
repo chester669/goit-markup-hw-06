@@ -103,15 +103,6 @@
         gap: 64px 24px;
     }
 
-    /* ----------- customers ------------- */
-    .customers-list {
-        gap: 72px 24px;
-    }
-
-    .customers-item {
-        width: 168px;
-
-    }
 
     /*---------------- footer --------------- */
     .footer-container {
@@ -171,34 +162,6 @@
     .tools-pictures {
         height: 300px;
     }
-
-    /* .tools-menu-list {
-        gap: 24px;
-        flex-wrap: nowrap;
-        margin: 64px 0;
-        justify-content: center;
-
-    }
-
-    .tools-menu-btn {
-        padding: 12px 24px;
-
-    }
-
-    .tools-list {
-        align-items: start;
-        flex-wrap: wrap;
-        gap: 72px 24px;
-        padding-bottom: 96px;
-    }
-
-    .tools-list-item {
-        border: 1px solid #E7E9FC;
-        background: var(--background-white);
-        width: calc((100% - 24px)/2);
-        height: 420px;
-    } */
-
 
 }
 
@@ -301,12 +264,6 @@
     }
 
 
-    /*---------------- about us --------------- */
-    .about-us {
-        display: block;
-    }
-
-
 
 
     /*---------------- team --------------- */
@@ -401,19 +358,4 @@
         justify-content: start;
         align-items: center;
     }
-
-    /* .tools-menu-list {
-        margin-top: 100px;
-        margin-bottom: 72px;
-
-    }
-
-    .tools-list {
-        gap: 48px 24px;
-        padding-bottom: 120px;
-    }
-
-    .tools-list-item {
-        width: 360px;
-    } */
 }

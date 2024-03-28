@@ -233,31 +233,6 @@ img {
 
 }
 
-/*---------------- about us --------------- */
-.about-us {
-    display: none;
-    background-color: var(--background-white);
-    padding-bottom: 120px;
-
-}
-
-.about-us-logo {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    color: var(--black-text-color);
-    text-align: center;
-    margin-bottom: 72px;
-}
-
-.about-us-list {
-    display: flex;
-    gap: 24px;
-}
-
-.about-us-item {}
-
 
 /*---------------- team --------------- */
 
@@ -341,54 +316,6 @@ img {
     fill: #F4F4FD;
 }
 
-/* ----------- customers ------------- */
-
-/* .customers-container {
-    padding: 96px 0;
-}
-
-.customers-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 72px 16px;
-
-}
-
-.customer-title {
-    margin-bottom: 72px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    text-align: center;
-}
-
-.customer-icon {
-    fill: #8E8F99;
-    transition: fill var(--hover-focus);
-}
-
-.customers-item:hover .customer-icon,
-.customers-item:focus .customer-icon:focus {
-    fill: var(--main-hover-focus-color);
-}
-
-.customers-item {
-    width: calc((100% - 16px)/2);
-    height: 88px;
-    padding: 16px 32px;
-    border-radius: 4px;
-    border: 1px solid;
-    border-color: #8E8F99;
-    transition: border-color var(--hover-focus);
-}
-
-.customers-item:hover,
-.customers-item:focus {
-    border-color: var(--main-hover-focus-color);
-} */
 
 /*---------------- footer --------------- */
 .footer {
@@ -557,37 +484,6 @@ img {
     text-align: center;
     margin-bottom: 72px;
 }
-
-/* .tools-menu-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px 24px;
-    margin: 40px 0;
-    justify-content: start;
-
-} */
-
-/* .tools-menu-btn {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    color: #4D5AE5;
-    background-color: #F4F4FD;
-    border: 1px solid;
-    border-color: #E7E9FC;
-    border-radius: 4px;
-    padding: 8px 16px;
-    transition: background-color var(--hover-focus), color var(--hover-focus);
-
-}
-
-.tools-menu-btn:hover,
-.tools-menu-btn:focus {
-    background-color: var(--main-hover-focus-color);
-    color: var(--background-white);
-} */
-
 
 
 
