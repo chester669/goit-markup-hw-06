@@ -204,6 +204,8 @@ img {
     max-width: 264px;
     height: 112px;
     border-radius: 4px;
+    border: 1px solid;
+    border-color: #8E8F99;
     background: #F4F4FD;
     margin-bottom: 8px;
     align-items: center;
@@ -341,7 +343,7 @@ img {
 
 /* ----------- customers ------------- */
 
-.customers-container {
+/* .customers-container {
     padding: 96px 0;
 }
 
@@ -386,7 +388,7 @@ img {
 .customers-item:hover,
 .customers-item:focus {
     border-color: var(--main-hover-focus-color);
-}
+} */
 
 /*---------------- footer --------------- */
 .footer {
@@ -539,24 +541,33 @@ img {
     margin: auto;
 }
 
-/*------------------------------- studio page ---------------------------------- */
-/*---------------- tools --------------- */
-
-
-.tools {
+/*------------------------------- portfolio page ---------------------------------- */
+.portfolio {
+    padding: 96px 0;
     background-color: var(--background-white);
 }
 
-.tools-menu-list {
+
+.portfolio-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: var(--black-text-color);
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+/* .tools-menu-list {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 24px;
     margin: 40px 0;
     justify-content: start;
 
-}
+} */
 
-.tools-menu-btn {
+/* .tools-menu-btn {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -575,7 +586,7 @@ img {
 .tools-menu-btn:focus {
     background-color: var(--main-hover-focus-color);
     color: var(--background-white);
-}
+} */
 
 
 
@@ -585,8 +596,9 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    align-items: center;
     gap: 48px;
-    padding-bottom: 48px;
 }
 
 
@@ -594,7 +606,7 @@ img {
 
 .tools-list-item {
     background: var(--background-white);
-    width: 100%;
+    width: 288px;
     height: 400px;
     border: 1px solid;
     border-color: #F4F4FD;
@@ -658,7 +670,7 @@ img {
 
 
 
-/* ----------- studio pictures cards ------------ */
+/* ----------- portfolio pictures cards ------------ */
 .tools-hidden {
     transition: transform var(--hover-focus);
 }

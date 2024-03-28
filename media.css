@@ -160,9 +160,19 @@
 
 
     /* ============ portfolio =============== */
+    .tools-list {
+        gap: 72px 24px;
+    }
 
+    .tools-list-item {
+        width: calc((100% - 24px)/2);
+    }
 
-    .tools-menu-list {
+    .tools-pictures {
+        height: 300px;
+    }
+
+    /* .tools-menu-list {
         gap: 24px;
         flex-wrap: nowrap;
         margin: 64px 0;
@@ -187,7 +197,8 @@
         background: var(--background-white);
         width: calc((100% - 24px)/2);
         height: 420px;
-    }
+    } */
+
 
 }
 
@@ -370,7 +381,28 @@
 
 
     /*  ============ portfolio ============ */
-    .tools-menu-list {
+    .portfolio {
+        padding: 120px 0;
+    }
+
+    .tools-list {
+        gap: 40px 24px;
+    }
+
+    .tools-list-item {
+        width: calc((100% - 24px)/3);
+        max-width: 360px;
+    }
+
+    .tools-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
+        align-items: center;
+    }
+
+    /* .tools-menu-list {
         margin-top: 100px;
         margin-bottom: 72px;
 
@@ -383,6 +415,5 @@
 
     .tools-list-item {
         width: 360px;
-    }
-
+    } */
 }
