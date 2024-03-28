@@ -1,0 +1,388 @@
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 428px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .menu-icon-list {
+        gap: 30px;
+    }
+}
+
+/* ------------ table -------------- */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    /*-------- header------ */
+
+    .header-menu-btn {
+        display: none;
+    }
+
+    .header-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-item {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        color: var(--black-text-color);
+
+    }
+
+    .header-item {
+        transition: color var(--hover-focus);
+    }
+
+    .header-item:hover,
+    .header-item:focus {
+        color: var(--main-hover-focus-color)
+    }
+
+    .header-address {
+        display: inline;
+    }
+
+    .header-address-mail {
+        margin-bottom: 12px;
+    }
+
+    /* -------------- hero ---------------- */
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(./images/hero-table.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(./images/hero-table-2x.jpg);
+        }
+    }
+
+    .hero-logo {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+
+    /* ---------- strategy -------------- */
+    .description-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+
+    }
+
+    .description-item {
+        max-width: 356px;
+        text-align: start;
+
+    }
+
+    .description-item-title {
+        text-align: start;
+    }
+
+    .description-item-text {
+        text-align: start;
+    }
+
+
+
+    /*---------------- team --------------- */
+    .team-list {
+        gap: 64px 24px;
+    }
+
+    /* ----------- customers ------------- */
+    .customers-list {
+        gap: 72px 24px;
+    }
+
+    .customers-item {
+        width: 168px;
+
+    }
+
+    /*---------------- footer --------------- */
+    .footer-container {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding-left: 100px;
+
+    }
+
+    .footer-text {
+        max-width: 264px;
+    }
+
+    .footer-social-media {
+        margin: 0;
+        text-align: start;
+    }
+
+    .footer-media-logo {
+        text-align: start;
+    }
+
+    .footer-input {
+        text-align: start;
+    }
+
+    .footer-input-email {
+        width: 264px;
+    }
+
+    .footer-input-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-form {
+        margin-bottom: 0;
+    }
+
+    /* ------------ backdrope ----------- */
+
+
+    /* ============ portfolio =============== */
+
+
+    .tools-menu-list {
+        gap: 24px;
+        flex-wrap: nowrap;
+        margin: 64px 0;
+        justify-content: center;
+
+    }
+
+    .tools-menu-btn {
+        padding: 12px 24px;
+
+    }
+
+    .tools-list {
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        padding-bottom: 96px;
+    }
+
+    .tools-list-item {
+        border: 1px solid #E7E9FC;
+        background: var(--background-white);
+        width: calc((100% - 24px)/2);
+        height: 420px;
+    }
+
+}
+
+
+
+
+
+/* ----- computer --------- */
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1160px;
+    }
+
+    /* ---------- header -------- */
+
+
+
+    .header-container {
+        justify-content: start;
+    }
+
+    .header-nav {
+        margin-left: 76px;
+    }
+
+    .header-list {}
+
+    .header-address {
+        margin-left: auto;
+    }
+
+    .header-address-mail {
+        margin-bottom: 0;
+    }
+
+    .header-address-list {
+        display: flex;
+        gap: 40px;
+
+    }
+
+    .header-mail-phone {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+    }
+
+
+    /*  ------------- hero ------------ */
+    .hero {
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(./images/hero-computer.jpg);
+
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(./images/hero-computer-2x.jpg);
+        }
+    }
+
+    .hero-logo {
+        margin-bottom: 48px;
+    }
+
+    /*---------------- description --------------- */
+    .description {
+        padding: 120px 0;
+    }
+
+    .description-icon-place {
+        display: flex;
+
+    }
+
+    .description-item {
+        max-width: 264px;
+
+
+    }
+
+
+    .description-list {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .description-item-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+    }
+
+
+    .description-item-text {
+        font-weight: 400;
+    }
+
+
+    /*---------------- about us --------------- */
+    .about-us {
+        display: block;
+    }
+
+
+
+
+    /*---------------- team --------------- */
+
+    .team {
+        padding: 120px 0;
+    }
+
+    .team-list {
+        flex-wrap: nowrap;
+        justify-content: start;
+        gap: 24px;
+    }
+
+    /* ----------- customers ------------- */
+
+    .customers-container {
+        padding: 120px 0;
+    }
+
+    .customers-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+
+    }
+
+    .customers-item {
+        width: calc((100% - 24px)/6);
+    }
+
+    /*-------------- footer ------------ */
+
+
+
+    .footer {
+        padding: 100px 0;
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 0;
+        gap: 0;
+
+    }
+
+
+    .footer-text {
+        min-width: 268px;
+    }
+
+    .footer-social-media {
+        margin-left: 120px;
+        margin-top: 0;
+        text-align: start;
+
+    }
+
+
+    .footer-input {
+        margin-left: 80px;
+    }
+
+
+    .footer-input-text {
+        margin-top: 0;
+    }
+
+    .footer-input-form {
+        gap: 24px;
+    }
+
+
+    /*  ============ portfolio ============ */
+    .tools-menu-list {
+        margin-top: 100px;
+        margin-bottom: 72px;
+
+    }
+
+    .tools-list {
+        gap: 48px 24px;
+        padding-bottom: 120px;
+    }
+
+    .tools-list-item {
+        width: 360px;
+    }
+
+}
