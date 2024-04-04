@@ -84,6 +84,7 @@ img {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
 }
 
 .header-menu-open {
@@ -177,6 +178,7 @@ img {
     display: block;
     margin: auto;
     cursor: pointer;
+    border: none;
     transition: background-color var(--hover-focus);
 
 }
@@ -459,6 +461,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.64px;
     color: #FFF;
+    border: none;
     background-color: #4D5AE5;
     display: flex;
     align-items: center;
@@ -572,7 +575,7 @@ img {
 }
 
 .tools-list-item:hover .tools-hidden,
-.tools-list-item:hover .tools-hidden {
+.tools-list-item:focus .tools-hidden {
     transform: translate(0);
 }
 
@@ -769,6 +772,7 @@ img {
     margin: auto;
     margin-top: 24px;
     cursor: pointer;
+    border: none;
 }
 
 .is-hidden {
@@ -780,15 +784,32 @@ img {
 
 /*  ------------ header - menu --------------- */
 .header-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px;
+
     position: fixed;
     top: 0;
     width: 100vw;
     height: 100%;
-    background-color: var(--background-white);
+    transition: opacity var(--hover-focus), visibility var(--hover-focus);
+
+}
+
+.header-check {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    position: absolute;
+    transform: translateX(0%);
+    transition: transform var(--hover-focus);
+    width: 100%;
+    height: 100%;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    background: #FCFCFC;
+}
+
+.header-menu.is-hidden .header-check {
+    transform: translateX(100%);
 }
 
 .menu-close-btn {
